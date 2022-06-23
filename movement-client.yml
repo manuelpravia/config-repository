@@ -1,4 +1,4 @@
 service:
-  name: cliente-service
+  name: movement-service
 server:
   port: 8090
