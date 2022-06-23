@@ -1,4 +1,4 @@
 service:
   name: movement-service
 server:
-  port: 8090
+  port: 8083
