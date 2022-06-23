@@ -1,0 +1,4 @@
+service:
+  name: account-service
+server:
+  port: 8082
