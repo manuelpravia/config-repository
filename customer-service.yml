@@ -1,4 +1,0 @@
-service:
-  name: cutomer-service
-server:
-  port: 8003
