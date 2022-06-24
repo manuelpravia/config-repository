@@ -1,7 +1,7 @@
 service:
   name: card-service
 server:
-  port: 8082
+  port: 8084
 
 eureka:
   client:
