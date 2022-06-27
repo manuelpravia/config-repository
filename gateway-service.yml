@@ -1,0 +1,35 @@
+server:
+  port: 8088
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: account-client
+          uri: lb://account-client
+          predicates:
+            - Path=/accounts/**
+        - id: card-client
+          uri: lb://card-client
+          predicates:
+            - Path=/cards/**
+        - id: credit-client
+          uri: lb://card-client
+          predicates:
+            - Path=/cards/**
+        - id: customer-client
+          uri: lb://customer-client
+          predicates:
+            - Path=/customers/**
+        - id: movement-client
+          uri: lb://movement-client
+          predicates:
+            - Path=/movements/**
