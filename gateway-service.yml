@@ -22,7 +22,7 @@ spring:
           predicates:
             - Path=/cards/**
         - id: credit-client
-          uri: lb://card-client
+          uri: lb://credit-client
           predicates:
             - Path=/credits/**
         - id: customer-client
