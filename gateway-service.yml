@@ -33,3 +33,7 @@ spring:
           uri: lb://movement-client
           predicates:
             - Path=/movements/**
+        - id: consulta-client
+          uri: lb://consulta-client
+          predicates:
+            - Path=/consultas/**
